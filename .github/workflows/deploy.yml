@@ -29,7 +29,11 @@ jobs:
 
       # Clone astra data repo (private)
       - name: Clone astra knowledge base
-        run: git clone https://x-access-token:${{ secrets.PAT }}@github.com/0010capacity/astra.git /tmp/astra || echo "astra repo not accessible, using local data"
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          git clone --depth 1 https://x-access-token:${{ secrets.PAT }}@github.com/0010capacity/astra.git /tmp/astra
+          echo "ASTRA_PATH=/tmp/astra" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: npm ci
