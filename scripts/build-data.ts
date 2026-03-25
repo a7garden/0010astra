@@ -2,7 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const CONCEPTS_DIR = '/Volumes/SATECHI DISK/Code/repos/astra/concepts';
+const CONCEPTS_DIR = process.env.ASTRA_PATH
+  ? path.join(process.env.ASTRA_PATH, 'concepts')
+  : '/Volumes/SATECHI DISK/Code/repos/astra/concepts';
 const OUTPUT_DIR = path.resolve('src/data');
 
 interface Concept {
