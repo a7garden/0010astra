@@ -105,7 +105,7 @@ export default function ConceptDetailPage() {
                 to={`/concepts?category=${encodeURIComponent(concept.category)}`}
                 size="sm"
               >
-                <Badge variant="light" color="violet">{concept.category}</Badge>
+                <Badge variant="light" color="gray">{concept.category}</Badge>
               </Anchor>
             </Group>
           </Grid.Col>
@@ -174,7 +174,7 @@ export default function ConceptDetailPage() {
                 to={`/concepts/${c.slug}`}
                 underline="never"
               >
-                <Badge size="lg" variant="light" color="violet">
+                <Badge size="lg" variant="light" color="gray">
                   {c.title}
                 </Badge>
               </Anchor>

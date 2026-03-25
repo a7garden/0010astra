@@ -19,7 +19,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 <Title order={3} c="white">
                   Astra
                 </Title>
-                <Badge size="sm" variant="light" color="violet">
+                <Badge size="sm" variant="light" color="gray">
                   Knowledge Base
                 </Badge>
               </Group>
@@ -29,7 +29,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <Anchor
                 component={Link}
                 to="/"
-                c={location.pathname === '/' ? 'violet' : 'dimmed'}
+                c="gray"
                 underline="never"
                 fw={location.pathname === '/' ? 700 : 400}
               >
@@ -41,7 +41,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <Anchor
                 component={Link}
                 to="/concepts"
-                c={location.pathname === '/concepts' ? 'violet' : 'dimmed'}
+                c="gray"
                 underline="never"
                 fw={location.pathname === '/concepts' ? 700 : 400}
               >

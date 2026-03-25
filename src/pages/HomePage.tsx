@@ -44,7 +44,7 @@ export default function HomePage() {
       <SimpleGrid cols={{ base: 1, sm: 3 }}>
         <Card withBorder padding="lg" radius="md">
           <Group gap="sm">
-            <IconSparkles size={24} color="var(--mantine-color-violet-6)" />
+            <IconSparkles size={24} color="var(--mantine-color-gray-6)" />
             <Box>
               <Text size="sm" c="dimmed">Total Concepts</Text>
               <Title order={2}>{meta.total}</Title>
@@ -87,7 +87,7 @@ export default function HomePage() {
               to={`/concepts?category=${encodeURIComponent(cat)}`}
               underline="never"
             >
-              <Badge size="lg" variant="light" color="violet" style={{ cursor: 'pointer' }}>
+              <Badge size="lg" variant="light" color="gray" style={{ cursor: 'pointer' }}>
                 {cat} ({count})
               </Badge>
             </Anchor>

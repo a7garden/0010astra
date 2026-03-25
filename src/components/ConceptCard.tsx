@@ -54,7 +54,7 @@ export default function ConceptCard({ concept }: ConceptCardProps) {
           <IconCalendar size={14} style={{ opacity: 0.5 }} />
           <Text size="xs" c="dimmed">{concept.created}</Text>
         </Group>
-        <Badge size="sm" variant="outline" color="violet">
+        <Badge size="sm" variant="outline" color="gray">
           {concept.category}
         </Badge>
       </Group>

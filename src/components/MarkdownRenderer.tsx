@@ -15,7 +15,7 @@ function WikiLinkRenderer({ slug, display }: WikiLinkRendererProps) {
   const exists = concepts.some((c) => c.slug === slug);
   if (exists) {
     return (
-      <Anchor component={Link} to={`/concepts/${slug}`} c="violet">
+      <Anchor component={Link} to={`/concepts/${slug}`} c="gray">
         {display}
       </Anchor>
     );
@@ -111,7 +111,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
     },
     blockquote: ({ children }: { children?: React.ReactNode }) => (
       <blockquote style={{
-        borderLeft: '3px solid var(--mantine-color-violet-5)',
+        borderLeft: '3px solid var(--mantine-color-gray-5)',
         paddingLeft: '1rem',
         marginLeft: 0,
         color: 'var(--mantine-color-dimmed)',
