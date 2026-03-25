@@ -1,0 +1,107 @@
+/* Astra Knowledge Base - Global Styles */
+
+/* Concept card hover effect */
+.concept-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--mantine-color-violet-4);
+}
+
+/* Markdown body styles */
+.concept-body h1,
+.concept-body h2,
+.concept-body h3,
+.concept-body h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--mantine-color-text);
+}
+
+.concept-body h1 { font-size: 1.5rem; }
+.concept-body h2 { font-size: 1.25rem; }
+.concept-body h3 { font-size: 1.1rem; }
+
+.concept-body p {
+  margin-bottom: 0.75rem;
+}
+
+.concept-body ul,
+.concept-body ol {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.concept-body li {
+  margin-bottom: 0.25rem;
+}
+
+.concept-body code {
+  background: var(--mantine-color-dark-4);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.concept-body pre {
+  background: var(--mantine-color-dark-7);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.concept-body pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.concept-body a {
+  color: var(--mantine-color-violet-4);
+  text-decoration: none;
+}
+
+.concept-body a:hover {
+  text-decoration: underline;
+}
+
+.concept-body blockquote {
+  border-left: 3px solid var(--mantine-color-violet-5);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--mantine-color-dimmed);
+  font-style: italic;
+}
+
+.concept-body hr {
+  border: none;
+  border-top: 1px solid var(--mantine-color-dark-4);
+  margin: 1.5rem 0;
+}
+
+.concept-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.concept-body th,
+.concept-body td {
+  border: 1px solid var(--mantine-color-dark-4);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.concept-body th {
+  background: var(--mantine-color-dark-7);
+  font-weight: 600;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better selection */
+::selection {
+  background: var(--mantine-color-violet-9);
+  color: white;
+}
